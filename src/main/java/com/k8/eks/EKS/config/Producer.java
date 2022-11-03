@@ -19,10 +19,10 @@ import java.util.Map;
 @Configuration
 public class Producer {
 
-    @Value("${spring.cloud.stream.binders.msk.environment.spring.cloud.stream.kafka.binder.brokers}")
+    @Value("${spring.kafka.bootstrap-servers}")
     private String bootstrapServers;
 
-    @Value("${spring.cloud.stream.binders.msk.environment.spring.cloud.stream.kafka.binder.configuration.security.protocol}")
+    @Value("${security.protocol}")
     private String securityProtocol;
 
     @Bean

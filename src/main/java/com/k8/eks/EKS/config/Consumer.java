@@ -24,7 +24,7 @@ import java.util.Map;
 @Configuration
 public class Consumer {
 
-    @Value("${spring.cloud.stream.binders.msk.environment.spring.cloud.stream.kafka.binder.brokers}")
+    @Value("${spring.kafka.bootstrap-servers}")
     private String bootstrapServers;
 
     @Value("msk-topic")
